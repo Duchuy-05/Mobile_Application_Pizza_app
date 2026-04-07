@@ -31,8 +31,8 @@ src/
  │    └── Home.css         # CSS Card sản phẩm và Grid layout cho trang chủ
 
  1. Màn hình Trang chủ (Home Screen)
-![Màn hình Trang chủ](./images/trang_giao_dien.png)
+![Màn hình Trang chủ](/images/trang_giao_dien.png)
  2. Màn hình Đặt món (Order Screen)
-![Màn hình Đặt món](./images/trang_order.png)
+![Màn hình Đặt món](/images/trang_order.png)
  3. Màn hình Giỏ hàng (Cart Screen)
-![Màn hình Giỏ hàng](./images/gio_hang.png)
+![Màn hình Giỏ hàng](/images/gio_hang.png)
