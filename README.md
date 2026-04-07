@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# 🍕 Ứng dụng Đặt Pizza Trực Tuyến (Pizza Order App)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dự án này là một ứng dụng web (Single Page Application) được xây dựng bằng **ReactJS**, cho phép người dùng xem danh sách sản phẩm, tùy chỉnh món ăn (kích cỡ, đế bánh, mua thêm món ăn kèm) và quản lý giỏ hàng.
 
-## Available Scripts
+## 👨‍🎓 Thông tin sinh viên
+- **Họ và tên:** Nguyễn Tiến Đức Huy
+- **Mã sinh viên:** 23810310127
+- **Môn học:** Mobile Programming
+- **Chuyên ngành:** Technology Information
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🏗 Cấu trúc hệ thống (System Architecture)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dự án áp dụng kiến trúc Component-Based của React, chia nhỏ giao diện thành các phần độc lập để dễ quản lý và tái sử dụng. Quản lý trạng thái (State Management) toàn cục được thực hiện thông qua **Context API**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Sơ đồ thư mục (Folder Structure)
+```text
+src/
+ ├── public/
+ │    └── images/          # Chứa các file ảnh (pizza, đồ uống...)
+ ├── src/
+ │    ├── data.json        # Dữ liệu tĩnh (Mock API) chứa Danh mục, Sản phẩm, Options, Add-ons
+ │    ├── CartContext.js   # Quản lý Global State cho Giỏ hàng (Thêm, Xóa, Tính tổng)
+ │    ├── Home.js          # Màn hình Trang chủ (Hiển thị danh mục & lưới sản phẩm)
+ │    ├── Order.js         # Màn hình Đặt món (Xử lý logic tính giá khi thay đổi Size/Addons)
+ │    ├── Cart.js          # Màn hình Giỏ hàng (Review đơn hàng & Thanh toán)
+ │    ├── App.js           # Root Component (Quản lý điều hướng - Routing giữa 3 màn hình)
+ │    ├── App.css          # CSS Layout nền và Animations dùng chung
+ │    ├── Buttons.css      # CSS UI System cho các nút bấm
+ │    └── Home.css         # CSS Card sản phẩm và Grid layout cho trang chủ
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 1. Màn hình Trang chủ (Home Screen)
+![Màn hình Trang chủ](./images/trang_giao_dien.png)
+ 2. Màn hình Đặt món (Order Screen)
+![Màn hình Đặt món](./images/trang_order.png)
+ 3. Màn hình Giỏ hàng (Cart Screen)
+![Màn hình Giỏ hàng](./images/gio_hang.png)
