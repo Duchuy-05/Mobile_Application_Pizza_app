@@ -29,10 +29,12 @@ src/
  │    ├── App.css          # CSS Layout nền và Animations dùng chung
  │    ├── Buttons.css      # CSS UI System cho các nút bấm
  │    └── Home.css         # CSS Card sản phẩm và Grid layout cho trang chủ
-
+```
  1. Màn hình Trang chủ (Home Screen)
-![Màn hình Trang chủ](/images/trang_giao_dien.png)
+<img width="599" height="1037" alt="trang_giao_dien" src="https://github.com/user-attachments/assets/dc326195-7b75-4fbc-a85f-e6116f6f9ec8" />
+
  2. Màn hình Đặt món (Order Screen)
-![Màn hình Đặt món](/images/trang_order.png)
+<img width="606" height="1034" alt="trang_order" src="https://github.com/user-attachments/assets/f39c9120-8bc8-462e-81f3-7e531358fdf6" />
+
  3. Màn hình Giỏ hàng (Cart Screen)
-![Màn hình Giỏ hàng](/images/gio_hang.png)
+<img width="613" height="1034" alt="gio_hang" src="https://github.com/user-attachments/assets/ff6f88e8-e225-4529-b14a-c55e0bb1194c" />
