@@ -1,0 +1,114 @@
+{
+    "categories": [
+      { "id": "c1", "name": "Pizza" },
+      { "id": "c2", "name": "Đồ uống" },
+      { "id": "c3", "name": "Món ăn kèm" }
+    ],
+
+    "globalOptions": [
+        {
+          "id": "opt_size",
+          "name": "Kích cỡ",
+          "choices": [
+            { "id": "sz_s", "name": "Nhỏ", "priceModifier": 0 },
+            { "id": "sz_m", "name": "Vừa", "priceModifier": 40000 },
+            { "id": "sz_l", "name": "Lớn", "priceModifier": 80000 }
+          ]
+        },
+        {
+          "id": "opt_crust",
+          "name": "Đế bánh",
+          "choices": [
+            { "id": "cr_thin", "name": "Đế mỏng", "priceModifier": 0 },
+            { "id": "cr_thick", "name": "Đế dày", "priceModifier": 15000 }
+          ]
+        }
+    ],
+    "globalAddons": [
+      { "id": "ad_1", "name": "Thêm Phô mai", "price": 20000 },
+      { "id": "ad_2", "name": "Thêm Xúc xích", "price": 15000 },
+      { "id": "ad_3", "name": "Thêm đá", "price": 0 }
+    ],
+"products": [
+    {
+      "id": "p1",
+      "categoryId": "c1",
+      "name": "Hải Sản Nhiệt Đới",
+      "description": "Tôm, mực, ngao phủ phô mai Mozzarella",
+      "basePrice": 120000,
+      "image": "/images/Pizza_Hai_San_Nhiet_Doi.jpg",
+      "optionIds": ["opt_size", "opt_crust"],
+      "addonIds": ["ad_cheese", "ad_sausage"]
+    },
+    {
+      "id": "p2",
+      "categoryId": "c1",
+      "name": "Pepperoni Xúc Xích",
+      "description": "Pizza truyền thống với topping xúc xích pepperoni cay nhẹ",
+      "basePrice": 110000,
+      "image": "/images/pepperoni_xux_xich.jpg",
+      "optionIds": ["opt_size", "opt_crust"],
+      "addonIds": ["ad_cheese"]
+    },
+    {
+      "id": "p3",
+      "categoryId": "c1",
+      "name": "Bò Băm Nướng BBQ",
+      "description": "Bò băm, thịt nguội, xúc xích và xốt BBQ đậm đà",
+      "basePrice": 140000,
+      "image": "/images/pizza_bbq.jpg",
+      "optionIds": ["opt_size", "opt_crust"],
+      "addonIds": ["ad_cheese", "ad_sausage"]
+    },
+    {
+      "id": "p4",
+      "categoryId": "c1",
+      "name": "Pizza Chay Thanh Mát",
+      "description": "Nấm tươi, hành tây, ớt chuông và quả dứa",
+      "basePrice": 95000,
+      "image": "/images/pizza_chay.jpg",
+      "optionIds": ["opt_size", "opt_crust"],
+      "addonIds": ["ad_cheese"]
+    },
+    {
+      "id": "d1",
+      "categoryId": "c2",
+      "name": "Coca Cola",
+      "description": "Lon 330ml - Mát lạnh",
+      "basePrice": 15000,
+      "image": "/images/coca-cola.webp",
+      "optionIds": [],
+      "addonIds": ["ad_ice"]
+    },
+    {
+      "id": "d2",
+      "categoryId": "c2",
+      "name": "Trà Đào Cam Sả",
+      "description": "Ly size L - Giải nhiệt mùa hè",
+      "basePrice": 35000,
+      "image": "/images/TRA-DAO-CAM-SA.png",
+      "optionIds": [],
+      "addonIds": ["ad_ice"]
+    },
+    {
+      "id": "s1",
+      "categoryId": "c3",
+      "name": "Khoai Tây Chiên",
+      "description": "Khoai tây chiên giòn rụm cỡ vừa",
+      "basePrice": 30000,
+      "image": "/images/Khoai_Tay_Chien.webp",
+      "optionIds": [],
+      "addonIds": ["ad_ketchup", "ad_cheese"]
+    },
+    {
+      "id": "s2",
+      "categoryId": "c3",
+      "name": "Gà Rán Giòn Cay",
+      "description": "2 Miếng đùi gà rán tẩm bột ớt",
+      "basePrice": 65000,
+      "image": "/images/Ga_Ran.webp",
+      "optionIds": [],
+      "addonIds": ["ad_ketchup"]
+    }
+  ]
+}
